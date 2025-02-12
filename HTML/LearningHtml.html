@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<!-- 
+There are 2 types of tags in HTML 
+"Semantic Tags : That are easily understandable from names, e-g; <header> , <main> and <footer> etc"
+"Non Semantic Tags : That are difficult to understand from name , e-g; <div>,<spam> etc... 
+USE semantic tags for Better SEO " -->
+
+<!-- In body we use 3 tags : Header , Main , Footer ....
+In main we use 3 tags : Section(It's use for a section on a page) , Article(use for an article on your page) and Aside(use for content aside main content(ads)) -->
+
+
+<!--Parent Tag "<HTML>" , Attribute "lang" refer to language and "en" refer to English-->
+<html lang="en">
+<!--Do cursor on any tag and click on "MDN Reference" to know how this tage working -->
+<head>
+    <meta charset="UTF-8">
+    <!--For responsive Website we use viewport , -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title of my page-->
+    <title>Document</title>
+</head>
+<body>
+    <!-- forms in html forms are used to collect data from user for example : sign up , login etc . In forms we have attribute "action" in which we decide data will go where as front end , bandend  -->
+     <form action="/action.php">
+        <!-- In input tag we we get information from user with the use of attribute as "type=text" , "Placeholder=Enter Name" -->
+         <input type="text" placeholder="User Name"><br><br>    
+         <input type="password" placeholder="Password"><br><br>
+         <!-- In input tag to get radio button we select type radio ,attribute "value" use for this input is for  and attribute "name" for class /same group -->
+          <label for="Gender"><b>Gender : </b></label><br>
+         <label for="Male">Male</label>
+         <input type="radio" value="Male" name="Gender">
+         <label for="Male">Female</label>
+         <input type="radio" value="Female" name="Gender">
+         <br>
+        <!-- checkbox -->
+        <CAPTion><b>Subject : </b></CAPTion><br>
+        <label for="Math">Mathematics
+        <input type="checkbox" value="math" name="subject" id="101">
+        </label><br>
+        <label for="Physics">Physics
+        <input type="checkbox" value="phy" name="subject" id="102">
+        </label><br>
+        <label for="CS">Computer Science
+        <input type="checkbox" value="cs" name="subject" id="103">
+        </label><br>
+        <label for="Pcychology">Pcychology
+        <input type="checkbox" value="Pcychology" name="subject" id="104">
+        </label><br><br>
+        <!-- for dropdown list we use "select" and "option" tags -->
+         <caption>Select your city</caption>
+         <select name="City" id="city">
+            <option value="Sahiwal">Sahiwal</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Faisalabad">Faisalabad</option>
+            <option value="Islamabad">Islamabad</option>
+         </select><br><br>
+        <!-- feedback input -->
+        <textarea name="feedback" id="101" rows="5" placeholder="Please give your valueable feedback"></textarea>
+        <!-- For button  -->
+         <input type="submit" value="submit">
+     </form>
+    <!-- <p>This is paragraph</p> -->
+     <!-- heading tag use for importance only not for sizing -->
+     <h1>Heading 1</h1>
+     <h2>Heading 2</h2>
+     <h3>Heading 3</h3>
+     <h4>Heading 4</h4>
+     <h5>Heading 5</h5>
+     <h6>Heading 6</h6>
+
+     <p>Sample Paragraph Sample Paragraph Sample Paragraph Sample Paragraph Sample Paragraph Sample Paragraph<br>Sample Paragraph Sample Paragraph Sample Paragraph Sample Paragraph Sample Paragraph Sample Paragraph<br> Sample Paragraph Sample Sample Paragraph Sample Paragraph Sample Paragraph Sample Paragraph<br> Sample Paragraph Sample Paragraph </p>
+     <!-- Anchor Tag -->
+     <a href="https://www.google.co.uk/">Google</a>
+     <br/>
+     <a href="https://code.visualstudio.com/download">Download Vs Code</a>
+     <br/>
+     <!--If we link our page that is already in same then sytax given below-->
+     <a href="/Hello.html">Go to Hello</a>
+     <br/>
+     <!-- If our next web page is in an other folder then we can link this given below .... if we want pange open in new tab then we use attribute "target="_main  -->
+     <a href="/Check/check1.html" target="_main">Go to Check</a>
+     <br/>
+     <br/>
+     <!-- "<hr> tag for Horizontal Ruller that create line between 2 rows -->
+     <hr/>
+     <!-- image tag - online image link or local image file directory -->
+     <!-- local image(Relative URL) , Attribute "alt" mean if internot is not available or server issue then instead of image we'll text that is written in "alt" -->
+     <img src="/HTML/windows.png.webp" alt="Windows Logo" height="250"/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+     <!-- From Online URL(Absolute URL) , for Image size we use "height" and "width" of attribute but recommended to use through "CSS"-->
+     <img src="https://static.vecteezy.com/system/resources/previews/020/489/291/original/3d-logo-of-apple-iphone-free-png.png" height="250"/>
+     <br>
+     <hr/>
+     <BR>
+    <!-- video tag , attribute src for link , sizing widht and height , ["controls" to play video and options like pause , download ,sound etc] ,"loop" to continue video , "autoplay" when you land on page video play-->
+     <video src="/HTML/My Movie.mp4" width="560" height="315" controls loop ></video><br><br>
+     <!-- When we want to make picture linkable then we do this like  -->
+     <a href="https://www.google.co.uk/"><img src="https://yt3.googleusercontent.com/g_bEA4DiQjWzCdRluwELXUOZ4zWelOaz_sFb61X6S2swcVTuGevoD1v-MDFZ0WS44IZ4zjNPEg=s900-c-k-c0x00ffffff-no-rj" height="100"/></a>
+     <br>
+     <hr/>
+     <!-- For Text/fonts formatting we can use these tags -->
+     <b>Bold</b>
+     <br>
+     <I>Italic</I>
+     <br>
+     <u>Under Line</u>
+     <br>
+     <hr/>
+     <br>
+     <!-- big text tag -->
+     <big>This tag shows big text</big>
+     <br>
+     <!-- small text tag -->
+     <small>This text shows small tag</small>
+     <!-- For formulaas For Example H2O to show "2" small and down we use tag "subscript <sub></sub>"" -->
+     <p>H<sub>2</sub>0</p>
+     <!-- For mathematical power for example 2power2 we use tag "Superscript <sup></sup>"" -->
+     <p>4<sup>2</sup></p>
+     <!-- Now we are using tag <pre></pre> which show as it is spaces and lines -->
+      <pre>Image details
+        Asset id: 1792989253
+        HongKong - November, 2019: Silhouette of a person using mobile phone in front of the Apple logo 
+        See less
+        Editorial Use Only.
+        Interested in using Editorial content for commercial purposes? Our commercial license with Asset AssuranceTM may be available to offer the legal coverage and peace of mind you need.</pre>
+
+      <!-- Div is a container used for other html elements , block elements(take full width) -->
+      <div>
+        <p><h2></h2>HTML Complete Course</h1></p>
+        <!-- show other website in current website we use ifram tag , got ifram from youtube video's share option then from Embed-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=W9EtIkpkb50zSh0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <br><br>
+        <!-- ifram for wikipedia -->
+        <p><h2></h2>wikipedia</h1></p>
+        <IFrame src="https://www.wikipedia.org/"></IFrame></IFrame>
+      </div>
+
+      <br><br>
+      <!-- <span> tag get only space as require -->
+      <span>check</span>
+      
+      <div id="12" for="For Lists and Tables">
+      <!-- lists are of 2 types unorder list(UL) and order list(OL) -->
+      <!-- Unorder -->
+       <br><br><br><CAPTion>FRUITS</CAPTion>
+      <ul>
+        <li>Apple</li>
+            <UL>
+                <LI>Color:red</LI>
+                <li>Color:Green</li>
+                <li>Color:Yellow</li>
+            </UL>
+        <li>Mango</li>
+        <li>Orange</li>
+      </ul>
+      <!-- order list -->
+       <p>Positions Holders</p>
+       <ol>
+        <li>Ahmad Ali</li>
+        <li>Muhammad Usman</li>
+        <li>Kamran Ghulam</li>
+       </ol>
+      <!-- Tables <TABLE>, table head<thead> , table body <tbody> ,table rows(tr) ,table header(th), table data(td)  -->
+        <CAPTIon>Students Data</CAPTIon>
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>City</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Muhamad Akmal</td>
+                <td>3901</td>
+                <td>Lahore</td>
+            </tr>
+            <tr>
+                <td>Abdul Mjaeed</td>
+                <td>4205</td>
+                <td>Sahiwal</td>
+            </tr>
+            <tr>
+                <td>Usman Khalid</td>
+                <td>4863</td>
+                <td>Islamabad</td>
+            </tr>
+        </tbody>
+        </div>
+        </table>
+
+        
+
+</body>
+</html>
