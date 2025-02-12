@@ -1,0 +1,202 @@
+/* css style sheet , it is a language use to describe the style of a document */
+
+/* There are two types of colors , 
+foreground color e-g button , links & texts color as "color:green" , 
+background color e-g  */
+
+/* Two types of color systems 
+RGB (Red  green  blue) each color value will be 0-255 as (102, 107, 155) , also can get from google color picker/color palette websites rgb or hex value
+Hex (hexadecimal) value 0-f "#00ff00" first two represent red ,next two green and next two blue 
+
+For opacity we use RGBA mean RGB Alpha and 'A' value is between 0 to 1 */
+
+
+/* selectors : There are 4 types of selctors
+
+1- universal selector .... asterisk *{} for whole document styling */
+*{
+    /* for different fonts we use font-family */
+    font-family:Arial;
+    /* opacity ,it's value is between 0 to 1*/
+    background-color: rgba(149, 127, 97, 0.25);
+}
+
+
+/*
+2- Element Selector
+
+h1
+    color: rgb(3, 50, 3);
+}
+p{
+    color: blue;
+}
+button{
+    background-color: blue;
+    color: white;
+    font: bold;
+}
+body{
+     background-color: rgb(187, 212, 187);
+    background-color: #6f2121;
+} */
+
+/* 3-Id selector : we will use it for unique value*/
+#my1{
+    color: blueviolet;
+}
+#my2{
+    /* we use font font-weight: to check color is how much light or dark "normal/bold/bolder/lighfter */
+    font-weight:bolder;
+    color: rgb(98, 146, 146);
+}
+#my3{
+    color: rgb(153, 153, 77);
+    /* FONT-SIZE : measurement units in CSS "inch , cm , px etc" 
+    recommended pixels 
+    96px=1 inch = 2.54cm*/
+    font-size: 28px;
+    border: 2px solid brown;
+    text-align: center;
+}
+#box{
+    background-color: rgb(210, 212, 212);
+    /* for alignment of text */
+    text-align: center;
+    /* For decoration of text we use text-decoration for underline or another , also we can use it to remove underline as "none" as link is already underline "<a href=""></a>" */
+    text-decoration:red underline;
+}
+/* 4- class selector : we will use same styling in multiple places through this selector */
+.myclass{
+    color :rgb(104, 46, 46);
+    font-style: italic;
+    /* FOR SPACES BETWEEN LINES We use line-height */
+    line-height: 30px;
+    /* To convert my text into lower case or uper case or normal we use text-transform  */
+    text-transform:none;
+}
+
+/* Box model in CSS : as we can set div according to given below
+Height , Width , Border , Padding , Margin , border width , border-style , border-color */
+ 
+.div1{
+    /*to get circle div through css then we can do as get square div and then write 50% border radius
+    height: 100px;
+    width:100px;
+    border-radius:50%;*/
+    height: 200px;
+    width: 500px;
+    border-width: 2px;
+    border-color: black;
+    border-style:solid;
+    /* we can also use border all properties in one query as given below */
+    /* border: 2px solid brown; */
+    /* to round the corner of an element we use border-radius */
+    border-radius: 7px;
+    background-color: azure;
+    text-align: center; 
+    padding: 10px;
+    margin:20px;
+}
+.div2
+{
+    height:25px;
+    width:40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* universal padding and margin 
+*{
+    padding: 0px;
+    margin: 0px;
+} */
+
+/* Navigation Bar
+Text:25px , color:Black (#0f1111) , anchor tags , spaces:200px , height :60px , search bar , button:yellow(#f08804) */
+#navbar{
+    height : 60px;
+    background-color: #0f1111;
+}
+button{
+    background-color: #f08804;
+    font-size: 20px;
+}
+#logo{
+    color: #f08804;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 150px;
+    text-decoration: none;
+}
+.textid
+{
+    color: white;
+    margin-right: 150px;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* Display Property : In block and inline elements we can use these 4 display properties
+display:inline: Takes only space required by element.(no margin , no padding)
+display:block : Takes full space available in width 
+inline-block : similiar to inline but we can set margin and padding
+display : none: to remove element from document flow */
+
+#div3{
+    color: #4e3204;
+    background-color: #f08804;
+    margin-left: 440px;
+    display: inline;
+    font-size: 40px;
+    font-weight: bold;
+}
+#inline{
+    margin: 20px;
+    font-size: 80px;
+    font-weight: bold;
+    display: inline;
+}
+/* inline-block : in this all functionalities will be work */
+#inlineblock{
+    color: white;
+    background-color: green;
+    
+    width: 250px;
+    padding: 5px;
+    margin-left: 140px;
+    margin-right: 1px;
+    text-align:center;
+    font-size: 20px;
+    font-weight: bold;
+    display:inline-block;
+}
+/* if we do display:none then that div will be totolly vanished from web page
+
+visibility property : 
+visibility: none "Although element vanish but it reserve space"
+display: none ""Although element vanish but it don't reserve space" */
+
+/* units in CSS - RELATIVE (div in div)
+% : use percentage for sizing , even from parent to child percentage property
+em : if we right font-size 1em mean it's relative to parent element
+rem : it set the size according to most outer size in html such as by default 
+vh (viewport height ) : height : 100vh; mean total height of screen , and width :100vh mean total height of screen  */
+
+/* Position : The position CSS property sets how an element is positioned in a document , POSITION are 4 types
+static :Default position (the top , right , bottom , left and z index properties have no effect)
+relative :  Element is relative to itself(the top , right , bottom , left and z-index will work)
+absolute : positioned relative to its closet positioned ancestor(removed from the flow)
+fixed : postioned relative to browser (remove from flow)
+sticky : positioned based on user's scroll position      */
+
+not changes will appear because by default web page is static
+#box1{
+    position : static;
+}
+in position relative element will set to itselt 
+#box2{
+    position : relative;
+    top : 10px;
+    left : 10px;
+}

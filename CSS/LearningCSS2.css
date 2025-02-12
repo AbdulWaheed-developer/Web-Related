@@ -1,0 +1,83 @@
+
+#SPCL{
+    margin-left: 5px;
+    font-size: 30px;
+    color: #f08804;
+    text-decoration: none;
+    margin-right: 150px;
+}
+.navbar{
+    font-size: 20px;
+    margin-right: 150px;
+    text-decoration: none;
+    color: white;
+}
+#navdiv{
+    height : 60px;
+    background-color: #0f1111;
+}
+button{
+    font-size: 20px;
+    background-color: #f08804;
+}
+.none{
+    text-decoration: none;
+    color: white;
+}
+
+/* if we do display:none then that div will be totolly vanished from web page
+
+visibility property : 
+visibility: none "Although element vanish but it reserve space"
+display: none ""Although element vanish but it don't reserve space"
+
+units in CSS - 
+RELATIVE (div in div)
+% : use percentage for sizing , even from parent to child percentage property
+em : if we right font-size 1em mean it's relative to parent element
+rem : it set the size according to most outer size in html such as by default 
+vh (viewport height ) : height : 100vh; mean total height of screen , and width :100vh mean total height of screen  */
+
+.contentdiv{
+    height: 50px;
+    width: 200px;
+    color:#f08804;
+    background-color: #0f1111;
+    display: inline-block;
+    text-align:center;
+}
+#viewport{
+    height: 100vh;
+}
+#textdisplay{
+    position:relative;
+    top: 10px;
+}
+
+/* Position : The position CSS property sets how an element is positioned in a document , POSITION are 4 types
+static :Default position (the top , right , bottom , left and z index properties have no effect)
+relative :  Element is relative to itself(the top , right , bottom , left and z-index will work)
+absolute : positioned relative to its closet positioned ancestor(removed from the flow)
+fixed : postioned relative to browser (remove from flow)
+sticky : positioned based on user's scroll position      */
+
+/* not changes will appear because by default web page is static */
+#box1{
+    position : static;
+}
+/* in position relative element will set to itselt  */
+#box2{
+    position : relative;
+    top : 10px;
+    left : 10px;
+}
+/* If we do position : absolute then things will go behind of closet positioned ancestors content exist on page but will not show */
+
+/* if we do position:fixed then things will set according to web page where we want to place content and while scroling content fixed content will never move. it's use in navigation bar*/
+
+/* but in postion:sticky when we reach to sticky content then it'll be fixed */
+#footer{
+    height : 60px;
+    background-color: #0f1111;
+    text-align: center;
+}
