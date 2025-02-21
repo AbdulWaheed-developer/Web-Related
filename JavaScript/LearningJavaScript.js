@@ -145,13 +145,16 @@ for(let i in animal){
 let str2="Abdul Waheed";
 console.log(str2.length);
 console.log(str2[2]);
-// Special type of string is "Template Literal" in which we not only store string but also data types as ${data variable} this is called string interpolation and we use "bactics `d` and at start and at end
+// Special type of string is "Template Literal" in which we not only store string but also data types as ${data variable} 
+//this is called string interpolation and we use "bactics `d` and at start and at end
 let specialstring3=`${animal.AnName} eat ${animal.Diet}`;
 console.log(specialstring3);
 console.log(typeof specialstring3);
 // Next line \n , Next tab \t
 console.log("This is\nTamplate of \ttab");
-// Built in functions in string as convert string "toupperCase()" , "toLocaleLowerCase()" , "trim()"(remove White spaces from starting and ending)(convert string on spot but not permanent value change) ,"slice(start, end)"(returns part of string) , "string1.concat(string2)"(joins string2 with string1), "replace(searchValue,newVal)","charAt(idx)"(we search charactor through index to print)
+// Built in functions in string as convert string "toupperCase()" , "toLocaleLowerCase()" , "trim()"(remove White spaces 
+//from starting and ending)(convert string on spot but not permanent value change) ,"slice(start, end)"(returns part of string) , 
+//"string1.concat(string2)"(joins string2 with string1), "replace(searchValue,newVal)","charAt(idx)"(we search charactor through index to print)
 console.log(specialstring3.toUpperCase())
 console.log(specialstring3.toLocaleLowerCase());
 console.log(specialstring3.trim());
