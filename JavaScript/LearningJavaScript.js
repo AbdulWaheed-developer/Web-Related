@@ -184,13 +184,14 @@ for(let value of marks){
 }
 let avg = (plus/marks.length);
 console.log(`Average :  ${avg}`);
-// There are some build in functions in Arrays as : push() it add values in last of array ,change come in original array , 
+// There are some build in functions in Arrays as : 
+//push() it add values in last of array ,change come in original array , 
 // pop() it delete values from last, change come in original array , 
 // toString() it converts values from array to string , don't change in original array , 
 // concat() it joins two arrays and returns result , don't change in original array , 
 // unshift() it add items in arrays in start
 // shift() it delete items from start and return
-// slice(start , end) returns a piece of array , it shows items less then end idex
+// slice(start , end) returns a piece of array , it shows items less than end idex
 // Splice(index,deletcount,add,add) change original array(add , remove , replace)
 let fooditems=["apple","potato","litchi","tomato"];
 fooditems.push("chips","burger","paneer"); // it add from start fooditems.unshift("bread")
